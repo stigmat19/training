@@ -2,14 +2,16 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MainComponent from "./components/MainComponent";
+import { BrowserRouter } from 'react-router-dom';
 
-require('./core/style/style.scss');
-
-// если необходимо, вид сборки можно проверить в коде:
-// if (process.env.NODE_ENV === 'production') {
-// if (process.env.NODE_ENV !== 'production') {
+import PagesRouter from './pages/PagesRouter';
+import PagesLinks from './pages/PagesLinks';
 
 ReactDOM.render( 
-  <MainComponent />
+  <BrowserRouter>
+    <div>
+      <PagesLinks />
+      <PagesRouter />
+    </div>
+  </BrowserRouter>
 , document.getElementById('container') );

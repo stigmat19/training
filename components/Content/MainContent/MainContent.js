@@ -4,9 +4,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-require('./ContentComponent.scss');
+require('./MainContent.scss');
 
-class ContentComponent extends React.PureComponent {
+class MainContent extends React.PureComponent {
 
   constructor(props) {
     super(props);
@@ -26,7 +26,7 @@ class ContentComponent extends React.PureComponent {
   }
 
   prepareState = (props) => {
-    let state = {...ContentComponent.defaultProps};
+    let state = {...MainContent.defaultProps};
     state = {
       ...state,
       ...props
@@ -47,11 +47,11 @@ class ContentComponent extends React.PureComponent {
   render() {
 
     return (
-      <div className="ContentComponent">
+      <div className="MainContent">
         hello
       </div>
     )
   }
 }
 
-export default ContentComponent;
+export default MainContent;

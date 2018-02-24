@@ -3,8 +3,6 @@
 
 import './MainComponent.scss';
 import HeaderComponent from "./HeaderComponent/HeaderComponent";
-import SideBarComponent from "./SideBarComponent/SideBarComponent";
-import ContentComponent from "./ContentComponent/ContentComponent";
 
 class MainComponent extends React.PureComponent {
 
@@ -16,9 +14,8 @@ class MainComponent extends React.PureComponent {
 
     return (
       <div className="MainComponent">
-        <SideBarComponent/>
         <HeaderComponent/>
-        <ContentComponent/>
+
       </div>
     )
     ;
