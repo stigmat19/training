@@ -1,4 +1,7 @@
 import React from 'react';
+import Measurements from "../components/Content/Measurements/Measurements";
+
+
 
 class Page_Zamer extends React.PureComponent {
 
@@ -6,7 +9,7 @@ class Page_Zamer extends React.PureComponent {
 
     return (
       <div>
-        <h1>Замер</h1>
+        <Measurements/>
       </div>
     );
 

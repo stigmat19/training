@@ -1,0 +1,39 @@
+.Measurements{
+  &__wrap{
+    display: flex;
+    justify-content: center;
+    & h2{
+      margin-bottom: 30px;
+    }
+    & .lastMeasurements{
+      margin-right: 50px;
+      text-align: left;
+      & > p{
+        height: 35px;
+        margin-bottom: 10px;
+        padding-top: 7px;
+      }
+    }
+    & .currentMeasurements{
+      & input{
+        width: 300px;
+        height: 35px;
+        border-radius: 10px;
+        border: 1px solid #514e4c;
+        background-color: #ffffff;
+        text-align: center;
+        color: #000000;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        display: block;
+        margin-bottom: 10px;
+      }
+      & .btn{
+        width: 300px;
+        display: block;
+        outline: none;
+      }
+    }
+  }
+}

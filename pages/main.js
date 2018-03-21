@@ -19,6 +19,7 @@ class Page_Main extends React.PureComponent {
   };
 
   fetchSuccess = (loadedData) => {
+    console.log(loadedData);
     this.setState({
       data: loadedData,
     },()=>{});
