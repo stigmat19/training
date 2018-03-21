@@ -38,18 +38,32 @@ class MainContent extends React.PureComponent {
     );
   };
 
-  static defaultProps = {};
+  static defaultProps = {
+    mainData: [
+      {
+        name: 'train1',
+        imgUrl: 'main1.jpg'
+      },
+    ]
+  };
 
   static propTypes = {
-
+    mainData: PropTypes.array,
   };
 
   render() {
-
+    console.log('childData', this.state.mainData);
     return (
-      <div className="MainContent">
-        hello
-      </div>
+      <ul className="MainContent">
+        {this.state.mainData.map((item, index) => {
+          return(
+            <li key={index}>
+              <img src={'img/'+ item.img} alt="img"/>
+              <p>{item.name}</p>
+            </li>
+          )
+        })}
+      </ul>
     )
   }
 }

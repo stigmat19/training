@@ -1,3 +1,11 @@
 .MainContent{
-
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: wrap row;
+  & li{
+    width: 250px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+  }
 }

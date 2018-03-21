@@ -4,8 +4,8 @@
   "description": "стартовый проект",
   "main": "App.js",
   "scripts": {
-    "builddev": "cross-env NODE_ENV=development .//node_modules//.bin//webpack-dev-server --progress --colors",
-    "buildprod": "cross-env NODE_ENV=production .//node_modules//.bin//webpack --progress",
+    "dev": "cross-env NODE_ENV=development .//node_modules//.bin//webpack-dev-server --progress --colors",
+    "prod": "cross-env NODE_ENV=production .//node_modules//.bin//webpack --progress",
     "test": "jest"
   },
   "author": "",
